@@ -102,13 +102,18 @@ flat = true
 
 [node name="Label" type="Label" parent="MenuC/CenterRowC/ButtonsC/ContinueB"]
 margin_right = 40.0
+<<<<<<< HEAD
 margin_bottom = 14.0
 custom_fonts/font = ExtResource( 3 )
 text = "Continue"
+=======
+margin_bottom = 40.0
+>>>>>>> 2f0649a42fb31cee0dfee1e7221fc402e9a0500c
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+<<<<<<< HEAD
 [node name="OptionsB" type="Button" parent="MenuC/CenterRowC/ButtonsC"]
 margin_top = 356.0
 margin_right = 766.0
@@ -162,3 +167,6 @@ __meta__ = {
 [connection signal="pressed" from="MenuC/CenterRowC/ButtonsC/ContinueB" to="." method="_on_ContinueB_pressed"]
 [connection signal="pressed" from="MenuC/CenterRowC/ButtonsC/OptionsB" to="." method="_on_OptionsB_pressed"]
 [connection signal="animation_finished" from="Fade/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+=======
+[node name="Tween" type="Tween" parent="MenuC"]
+>>>>>>> 2f0649a42fb31cee0dfee1e7221fc402e9a0500c
