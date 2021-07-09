@@ -2,6 +2,5 @@
 .import/
 
 # Binaries
-bin/
 build/
 lib/
