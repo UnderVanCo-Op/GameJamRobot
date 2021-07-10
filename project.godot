@@ -25,6 +25,10 @@ config/description="Game for a Jam 09/07/2021"
 run/main_scene="res://UI/Title Screen.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Main="*res://Singletons/Main.gd"
+
 [display]
 
 window/size/width=1920
