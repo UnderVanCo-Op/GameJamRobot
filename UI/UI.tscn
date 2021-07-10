@@ -38,25 +38,24 @@ __meta__ = {
 }
 
 [node name="Continue" type="Button" parent="PauseLayer/Pause/VBoxC"]
-margin_right = 670.0
+margin_right = 600.0
 margin_bottom = 76.0
 custom_fonts/font = ExtResource( 1 )
-text = "Продолжить"
+text = "Continue"
 
 [node name="Restart" type="Button" parent="PauseLayer/Pause/VBoxC"]
 margin_top = 101.0
-margin_right = 670.0
+margin_right = 600.0
 margin_bottom = 177.0
-size_flags_horizontal = 4
 custom_fonts/font = ExtResource( 1 )
-text = "Начать с начала"
+text = "Restart level"
 
 [node name="MainMenu" type="Button" parent="PauseLayer/Pause/VBoxC"]
 margin_top = 202.0
-margin_right = 670.0
+margin_right = 600.0
 margin_bottom = 278.0
 custom_fonts/font = ExtResource( 1 )
-text = "В главное меню"
+text = "Quit to Menu"
 
 [connection signal="pressed" from="PauseLayer/Pause/VBoxC/Continue" to="PauseLayer/Pause" method="_on_Continue_pressed"]
 [connection signal="pressed" from="PauseLayer/Pause/VBoxC/Restart" to="PauseLayer/Pause" method="_on_Restart_pressed"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/baseB.gd" type="Script" id=1]
+[ext_resource path="res://UI/baseB_PurpleTheme.tres" type="Theme" id=2]
+
+[node name="baseB" type="Control"]
+anchor_right = 0.0666667
+anchor_bottom = 0.118519
+margin_right = -0.000640869
+margin_bottom = -3.05176e-05
+rect_min_size = Vector2( 128, 128 )
+rect_pivot_offset = Vector2( 64, 64 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="But" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 40, 40 )
+rect_pivot_offset = Vector2( 64, 64 )
+theme = ExtResource( 2 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="But" to="." method="_on_But_pressed"]

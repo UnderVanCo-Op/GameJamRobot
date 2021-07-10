@@ -8,13 +8,13 @@ func _input(event):
 
 
 func _on_MainMenu_pressed():
-	get_tree().paused = false	# выключаем паузу физики, если она была
+	get_tree().paused = false	# выключаем паузу физики принудительно
 	Main.goto_scene("res://UI/Title Screen.tscn")
 
 
 func _on_Continue_pressed():
-	pass # Replace with function body.
+	get_tree().paused = false	# выключаем паузу физики принудительно
 
 
 func _on_Restart_pressed():
-	pass # Replace with function body.
+	get_tree().paused = false	# выключаем паузу физики принудительно
