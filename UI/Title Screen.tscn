@@ -1,42 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://UI/Logo.png" type="Texture" id=1]
-[ext_resource path="res://UI/Character.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/NameOfTheGame_DynF.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UI/Anim_FadebtwScenes.tres" type="Animation" id=2]
 [ext_resource path="res://Fonts/TitleScreenBFont.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Fonts/Version_dynFont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://UI/Title Screen.gd" type="Script" id=5]
-
-[sub_resource type="Animation" id=1]
-resource_name = "Fade between Scenes"
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
-}
-tracks/1/type = "method"
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"values": [ {
-"args": [  ],
-"method": "show"
-}, {
-"args": [  ],
-"method": "hide"
-} ]
-}
+[ext_resource path="res://background/FON MAIN ICRAN 1.png" type="Texture" id=6]
 
 [node name="Title Screen" type="Control"]
 anchor_right = 1.0
@@ -46,41 +15,60 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_min_size = Vector2( 1920, 1080 )
+texture = ExtResource( 6 )
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="MenuC" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 192.0
-margin_top = 112.0
+margin_top = 40.0
 margin_right = -192.0
 margin_bottom = -104.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Logo" type="TextureRect" parent="MenuC"]
+[node name="Label" type="Label" parent="MenuC"]
 margin_right = 1536.0
-margin_bottom = 200.0
-texture = ExtResource( 1 )
-stretch_mode = 4
+margin_bottom = 117.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 0.682353, 0.133333, 1 )
+text = "The name of the game"
+align = 1
 
 [node name="CenterRowC" type="HBoxContainer" parent="MenuC"]
-margin_top = 204.0
+margin_top = 121.0
 margin_right = 1536.0
-margin_bottom = 833.0
+margin_bottom = 905.0
 size_flags_vertical = 3
 
 [node name="ButtonsC" type="VBoxContainer" parent="MenuC/CenterRowC"]
 margin_right = 766.0
-margin_bottom = 629.0
+margin_bottom = 784.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 7
 alignment = 1
 
 [node name="StartNewGameB" type="Button" parent="MenuC/CenterRowC/ButtonsC"]
-margin_top = 202.0
+margin_top = 318.0
 margin_right = 766.0
-margin_bottom = 272.0
+margin_bottom = 388.0
 rect_min_size = Vector2( 50, 70 )
 flat = true
 
@@ -88,28 +76,31 @@ flat = true
 margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 0.682353, 0.133333, 1 )
 text = "New Game"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ContinueB" type="Button" parent="MenuC/CenterRowC/ButtonsC"]
-margin_top = 279.0
+[node name="LevelsB" type="Button" parent="MenuC/CenterRowC/ButtonsC"]
+margin_top = 395.0
 margin_right = 766.0
-margin_bottom = 349.0
+margin_bottom = 465.0
 rect_min_size = Vector2( 50, 70 )
 flat = true
 
-[node name="Label" type="Label" parent="MenuC/CenterRowC/ButtonsC/ContinueB"]
+[node name="Label" type="Label" parent="MenuC/CenterRowC/ButtonsC/LevelsB"]
 margin_right = 40.0
 margin_bottom = 14.0
 custom_fonts/font = ExtResource( 3 )
-text = "Continue"
+custom_colors/font_color = Color( 1, 0.682353, 0.133333, 1 )
+text = "Levels"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="OptionsB" type="Button" parent="MenuC/CenterRowC/ButtonsC"]
+visible = false
 margin_top = 356.0
 margin_right = 766.0
 margin_bottom = 426.0
@@ -128,23 +119,16 @@ __meta__ = {
 [node name="CenterC" type="CenterContainer" parent="MenuC/CenterRowC"]
 margin_left = 770.0
 margin_right = 1536.0
-margin_bottom = 629.0
+margin_bottom = 784.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Character" type="TextureRect" parent="MenuC/CenterRowC/CenterC"]
-margin_left = 183.0
-margin_top = 14.0
-margin_right = 583.0
-margin_bottom = 614.0
-texture = ExtResource( 2 )
-
 [node name="Version" type="Label" parent="MenuC"]
-margin_top = 837.0
+margin_top = 909.0
 margin_right = 1536.0
-margin_bottom = 864.0
+margin_bottom = 936.0
 custom_fonts/font = ExtResource( 4 )
-text = "Version NOT even Pre-Alpha 09/07/2021"
+text = "Version NOT even Pre-Alpha 10/07/2021"
 
 [node name="Fade" type="ColorRect" parent="."]
 visible = false
@@ -156,9 +140,9 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Fade"]
-"anims/Fade between Scenes" = SubResource( 1 )
+anims/Anim_FadebtwScenes = ExtResource( 2 )
 
 [connection signal="pressed" from="MenuC/CenterRowC/ButtonsC/StartNewGameB" to="." method="_on_StartNewGameB_pressed"]
-[connection signal="pressed" from="MenuC/CenterRowC/ButtonsC/ContinueB" to="." method="_on_ContinueB_pressed"]
+[connection signal="pressed" from="MenuC/CenterRowC/ButtonsC/LevelsB" to="." method="_on_ContinueB_pressed"]
 [connection signal="pressed" from="MenuC/CenterRowC/ButtonsC/OptionsB" to="." method="_on_OptionsB_pressed"]
 [connection signal="animation_finished" from="Fade/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
