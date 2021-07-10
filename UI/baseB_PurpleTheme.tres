@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Fonts/baseB_DynamF.tres" type="DynamicFont" id=1]
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 0.682353, 0.133333, 1 )
 
 [resource]
@@ -16,5 +16,5 @@ Button/fonts/font = null
 Button/styles/disabled = null
 Button/styles/focus = null
 Button/styles/hover = null
-Button/styles/normal = SubResource( 2 )
+Button/styles/normal = SubResource( 1 )
 Button/styles/pressed = null

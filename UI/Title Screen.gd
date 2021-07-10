@@ -11,7 +11,6 @@ func _on_StartNewGameB_pressed():
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	pass
 	#print("change scene worked")	
 	#get_tree().change_scene("res://Levels/Level1.tscn")
 	#Global.goto_scene("res://Scenes/Levels/Level1/Root.tscn")

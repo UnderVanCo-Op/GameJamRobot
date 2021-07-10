@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Fonts/TitleScreenBFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://UI/Pause.gd" type="Script" id=2]
+[ext_resource path="res://UI/PauseMenuB_Theme.tres" type="Theme" id=3]
 
 [node name="UI" type="CanvasLayer"]
 
@@ -40,6 +41,7 @@ __meta__ = {
 [node name="Continue" type="Button" parent="PauseLayer/Pause/VBoxC"]
 margin_right = 600.0
 margin_bottom = 76.0
+theme = ExtResource( 3 )
 custom_fonts/font = ExtResource( 1 )
 text = "Continue"
 
@@ -47,6 +49,7 @@ text = "Continue"
 margin_top = 101.0
 margin_right = 600.0
 margin_bottom = 177.0
+theme = ExtResource( 3 )
 custom_fonts/font = ExtResource( 1 )
 text = "Restart level"
 
@@ -54,6 +57,7 @@ text = "Restart level"
 margin_top = 202.0
 margin_right = 600.0
 margin_bottom = 278.0
+theme = ExtResource( 3 )
 custom_fonts/font = ExtResource( 1 )
 text = "Quit to Menu"
 

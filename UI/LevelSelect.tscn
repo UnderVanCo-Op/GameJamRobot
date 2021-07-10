@@ -80,6 +80,7 @@ margin_left = 268.0
 margin_right = 396.0
 margin_bottom = 128.0
 lvl_num = 1
+lvl_to_load = "res://Levels/Level1.tscn"
 is_enabled = true
 
 [node name="baseB2" parent="MarginC/PanelC/VBoxContainer/HBoxContainer" instance=ExtResource( 3 )]
