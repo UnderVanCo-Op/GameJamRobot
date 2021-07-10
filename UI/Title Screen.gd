@@ -3,7 +3,7 @@ extends Control
 #TITLE SCREEN
 
 func _ready():
-	$MenuC/CenterRowC/ButtonsC/StartNewGameB.grab_focus()
+#	$MenuC/CenterRowC/MarginC/ColorRect/ButtonsC/StartNewGameB.grab_focus()
 	get_tree().paused = false # принудительно убираем паузу физики и UI на всякий
 
 
