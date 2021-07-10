@@ -6,15 +6,15 @@ func _input(event):
 		get_tree().paused = new_pause_state		# переключить всю физику дерева сцены
 		visible = new_pause_state
 
-func _on_Load_pressed():
-	pass # Replace with function body.
-
-
-func _on_Save_pressed():
-	pass # Replace with function body.
-
 
 func _on_MainMenu_pressed():
-	#Global.goto_scene("res://Scenes/Title Screen/Title Screen.tscn")
 	get_tree().paused = false	# выключаем паузу физики, если она была
-	#get_tree().change_scene("res://Scenes/Title Screen/Title Screen.tscn")
+	Main.goto_scene("res://UI/Title Screen.tscn")
+
+
+func _on_Continue_pressed():
+	pass # Replace with function body.
+
+
+func _on_Restart_pressed():
+	pass # Replace with function body.

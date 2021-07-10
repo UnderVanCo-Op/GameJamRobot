@@ -8,6 +8,8 @@
 [node name="PauseLayer" type="CanvasLayer" parent="."]
 
 [node name="Pause" type="Control" parent="PauseLayer"]
+pause_mode = 2
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
@@ -35,26 +37,27 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Save" type="Button" parent="PauseLayer/Pause/VBoxC"]
-margin_right = 622.0
+[node name="Continue" type="Button" parent="PauseLayer/Pause/VBoxC"]
+margin_right = 670.0
 margin_bottom = 76.0
 custom_fonts/font = ExtResource( 1 )
-text = "Сохранить"
+text = "Продолжить"
 
-[node name="Load" type="Button" parent="PauseLayer/Pause/VBoxC"]
+[node name="Restart" type="Button" parent="PauseLayer/Pause/VBoxC"]
 margin_top = 101.0
-margin_right = 622.0
+margin_right = 670.0
 margin_bottom = 177.0
+size_flags_horizontal = 4
 custom_fonts/font = ExtResource( 1 )
-text = "Загрузить"
+text = "Начать с начала"
 
 [node name="MainMenu" type="Button" parent="PauseLayer/Pause/VBoxC"]
 margin_top = 202.0
-margin_right = 622.0
+margin_right = 670.0
 margin_bottom = 278.0
 custom_fonts/font = ExtResource( 1 )
 text = "В главное меню"
 
-[connection signal="pressed" from="PauseLayer/Pause/VBoxC/Save" to="PauseLayer/Pause" method="_on_Save_pressed"]
-[connection signal="pressed" from="PauseLayer/Pause/VBoxC/Load" to="PauseLayer/Pause" method="_on_Load_pressed"]
+[connection signal="pressed" from="PauseLayer/Pause/VBoxC/Continue" to="PauseLayer/Pause" method="_on_Continue_pressed"]
+[connection signal="pressed" from="PauseLayer/Pause/VBoxC/Restart" to="PauseLayer/Pause" method="_on_Restart_pressed"]
 [connection signal="pressed" from="PauseLayer/Pause/VBoxC/MainMenu" to="PauseLayer/Pause" method="_on_MainMenu_pressed"]
