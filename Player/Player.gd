@@ -51,15 +51,9 @@ func _physics_process(_delta):
 		rocket.position = $RocketSpawnP.global_position
 		get_parent().add_child(rocket)
 	
-#	elif Input.is_action_pressed("Player_down"):
-#		speed.y += step
 	speed.y += gravity
-#	speed.y *= 0.9	# снижение скорости
-#	speed.x *= 0.9	# снижение скорости
-	#if(speed.length() > step):	# возможный фикс диагональной проблемы
-		#speed.normalized()
-	if(speed.x > 10 or speed.x <-10):
-		speed.x = 5
+	speed.x *= 0.99
+
 	speed = move_and_slide(speed, Vector2.UP)	# Плавно перемещаться
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
