@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/animation/Player.tres" type="SpriteFrames" id=1]
+=======
+[gd_scene load_steps=29 format=2]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight7.png" type="Texture" id=1]
+>>>>>>> 01c6a7e8181e52699f1cb5e9cfba64702277751f
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Player/Camera2D.gd" type="Script" id=3]
 
