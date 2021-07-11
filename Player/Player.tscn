@@ -14,7 +14,7 @@ script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
-animation = "Wakeup_right"
+animation = "StayWhithoutL"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.222748, 4.23177 )
