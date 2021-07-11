@@ -9,7 +9,6 @@ func _ready():
 
 func _on_StartNewGameB_pressed():
 	$Fade/AnimationPlayer.play("Anim_FadebtwScenes")
-	#print("but worked")
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
@@ -19,11 +18,12 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 	Main.goto_scene("res://Levels/Level1.tscn")
 
 
-func _on_ContinueB_pressed():
-	$Fade/AnimationPlayer.play("Anim_FadebtwScenes")
-	Main.goto_scene("res://UI/LevelSelect.tscn")
-
 func _on_OptionsB_pressed():
 	pass # Replace with function body.
+
+
+func _on_LevelsB_pressed():
+	$Fade/AnimationPlayer.play("Anim_FadebtwScenes")
+	Main.goto_scene("res://UI/LevelSelect.tscn")
 
 #TITLE SCREEN

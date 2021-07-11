@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite-0001grouve.png-5fb7c5ed83c2d27dc2f2768fe37edc04.stex"
+path="res://.import/Sprite-0006ground.png-f7cb60cf17d84eeb229738b9f43433e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilemap/toDelete/Sprite-0001grouve.png"
-dest_files=[ "res://.import/Sprite-0001grouve.png-5fb7c5ed83c2d27dc2f2768fe37edc04.stex" ]
+source_file="res://Tilemap/Sprite-0006ground.png"
+dest_files=[ "res://.import/Sprite-0006ground.png-f7cb60cf17d84eeb229738b9f43433e6.stex" ]
 
 [params]
 

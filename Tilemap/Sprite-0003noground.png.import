@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zemlialeftplatform.png-c7056cf3fa523fbcaba0cfcc479b20c5.stex"
+path="res://.import/Sprite-0003noground.png-45753393c86f292c041e70a379096c5f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilemap/toDelete/zemlialeftplatform.png"
-dest_files=[ "res://.import/zemlialeftplatform.png-c7056cf3fa523fbcaba0cfcc479b20c5.stex" ]
+source_file="res://Tilemap/Sprite-0003noground.png"
+dest_files=[ "res://.import/Sprite-0003noground.png-45753393c86f292c041e70a379096c5f.stex" ]
 
 [params]
 

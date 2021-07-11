@@ -135,6 +135,6 @@ texture_scale = 0.3
 color = Color( 1, 0.0784314, 0.0784314, 1 )
 
 [connection signal="pressed" from="MenuC/MarginC1/ColorRect/ButtonsC/StartNewGameB" to="." method="_on_StartNewGameB_pressed"]
-[connection signal="pressed" from="MenuC/MarginC1/ColorRect/ButtonsC/LevelsB" to="." method="_on_ContinueB_pressed"]
+[connection signal="pressed" from="MenuC/MarginC1/ColorRect/ButtonsC/LevelsB" to="." method="_on_LevelsB_pressed"]
 [connection signal="pressed" from="MenuC/MarginC1/ColorRect/ButtonsC/OptionsB" to="." method="_on_OptionsB_pressed"]
 [connection signal="animation_finished" from="Fade/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

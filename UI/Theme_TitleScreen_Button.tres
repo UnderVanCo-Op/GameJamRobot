@@ -3,9 +3,6 @@
 [ext_resource path="res://Fonts/TitleScreenBFont.tres" type="DynamicFont" id=1]
 
 [sub_resource type="StyleBoxFlat" id=1]
-<<<<<<< HEAD
-bg_color = Color( 0.694118, 0.47451, 0.101961, 1 )
-=======
 bg_color = Color( 0.756863, 0.517647, 0.113725, 1 )
 border_width_left = 2
 border_width_right = 2
@@ -14,7 +11,6 @@ corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
->>>>>>> 8ce6a1b153bc9b19eab56f8ba307a41f49e13c81
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 1, 0.682353, 0.133333, 1 )
@@ -50,8 +46,4 @@ Button/styles/disabled = null
 Button/styles/focus = null
 Button/styles/hover = SubResource( 1 )
 Button/styles/normal = SubResource( 2 )
-<<<<<<< HEAD
-Button/styles/pressed = null
-=======
 Button/styles/pressed = SubResource( 3 )
->>>>>>> 8ce6a1b153bc9b19eab56f8ba307a41f49e13c81
