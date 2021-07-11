@@ -77,6 +77,12 @@ func _physics_process(_delta):
 	speed.y += gravity
 
 	speed = move_and_slide(speed, Vector2.UP)	# Плавно перемещаться
+	
+	for i in get_slide_count():
+		var collision = get_slide_collision(i)
+		print("I collided with ", collision.collider.name)
+		#if(collision.collider.name == "d"):
+		#	pass
 
 func pick():
 	isArmed = true

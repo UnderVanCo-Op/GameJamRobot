@@ -84,7 +84,9 @@ Player_launch={
 
 2d_physics/layer_1="Ground"
 2d_physics/layer_2="Player"
-2d_physics/layer_3="Rockets and Bullets"
+2d_physics/layer_3="Rockets"
+2d_physics/layer_4="Damaged Rockets"
+2d_physics/layer_5="Bullets"
 
 [rendering]
 
