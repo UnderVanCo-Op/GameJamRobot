@@ -49,11 +49,7 @@
 
 [resource]
 animations = [ {
-<<<<<<< HEAD
 "frames": [ ExtResource( 17 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 19 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 21 ) ],
-=======
-"frames": [ ExtResource( 8 ), ExtResource( 10 ) ],
->>>>>>> f53b71c100c79f634d4b5d74e1be9968e1dd61bc
 "loop": true,
 "name": "HalphJL",
 "speed": 5.0
@@ -61,14 +57,11 @@ animations = [ {
 "frames": [ ExtResource( 43 ), ExtResource( 29 ) ],
 "loop": false,
 "name": "HalphJR",
-<<<<<<< HEAD
-=======
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 27 ), ExtResource( 39 ), ExtResource( 41 ), ExtResource( 25 ), ExtResource( 28 ), ExtResource( 33 ), ExtResource( 42 ), ExtResource( 34 ), ExtResource( 38 ) ],
 "loop": true,
 "name": "HalphL_run",
->>>>>>> f53b71c100c79f634d4b5d74e1be9968e1dd61bc
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 27 ) ],
@@ -81,7 +74,6 @@ animations = [ {
 "name": "StayWhithoutR",
 "speed": 5.0
 }, {
-<<<<<<< HEAD
 "frames": [ ExtResource( 8 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "HalphJL",
@@ -90,11 +82,7 @@ animations = [ {
 "frames": [ ExtResource( 31 ), ExtResource( 27 ) ],
 "loop": false,
 "name": "WakeJamp_HL",
-=======
-"frames": [ ExtResource( 46 ), ExtResource( 45 ) ],
-"loop": true,
-"name": "WakeJump_HR",
->>>>>>> f53b71c100c79f634d4b5d74e1be9968e1dd61bc
+
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
@@ -102,7 +90,6 @@ animations = [ {
 "name": "Wakeup_left",
 "speed": 5.0
 }, {
-<<<<<<< HEAD
 "frames": [ ExtResource( 45 ) ],
 "loop": false,
 "name": "StayWhithoutR",
@@ -111,11 +98,6 @@ animations = [ {
 "frames": [ ExtResource( 15 ), ExtResource( 21 ) ],
 "loop": false,
 "name": "Wakeup_right",
-=======
-"frames": [ ExtResource( 31 ), ExtResource( 27 ) ],
-"loop": false,
-"name": "WakeJamp_HL",
->>>>>>> f53b71c100c79f634d4b5d74e1be9968e1dd61bc
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 21 ) ],
@@ -123,26 +105,7 @@ animations = [ {
 "name": "Wakeup_right",
 "speed": 5.0
 }, {
-<<<<<<< HEAD
-"frames": [ ExtResource( 8 ), ExtResource( 10 ) ],
-"loop": false,
-"name": "Left_jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 45 ), ExtResource( 36 ), ExtResource( 44 ), ExtResource( 26 ), ExtResource( 37 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 30 ), ExtResource( 40 ) ],
-"loop": true,
-"name": "HalphR_run",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "Right_jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 27 ), ExtResource( 39 ), ExtResource( 41 ), ExtResource( 25 ), ExtResource( 28 ), ExtResource( 33 ), ExtResource( 42 ), ExtResource( 34 ), ExtResource( 38 ) ],
-"loop": true,
-"name": "HalphL_run",
-=======
+
 "frames": [ ExtResource( 5 ), ExtResource( 4 ) ],
 "loop": false,
 "name": "Right_jump",
@@ -166,6 +129,5 @@ animations = [ {
 "frames": [ ExtResource( 17 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 19 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "Right_run",
->>>>>>> f53b71c100c79f634d4b5d74e1be9968e1dd61bc
 "speed": 5.0
 } ]
