@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Player/HeroAnimationPNG/runRight7.png" type="Texture" id=1]
@@ -51,3 +52,6 @@ shape = SubResource( 2 )
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 script = ExtResource( 3 )
+
+[node name="RocketSpawnP" type="Position2D" parent="."]
+position = Vector2( 24.6236, -0.0187263 )
