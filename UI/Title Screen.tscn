@@ -79,7 +79,7 @@ text = "New Game"
 [node name="LevelsB" type="Button" parent="MenuC/MarginC1/ColorRect/ButtonsC"]
 margin_top = 130.0
 margin_right = 400.0
-margin_bottom = 200.0
+margin_bottom = 204.0
 rect_min_size = Vector2( 50, 70 )
 theme = ExtResource( 8 )
 text = "Levels"
@@ -105,7 +105,8 @@ margin_top = 825.0
 margin_right = 1536.0
 margin_bottom = 852.0
 custom_fonts/font = ExtResource( 4 )
-text = "Version NOT even Pre-Alpha 10/07/2021"
+text = "Version NOT even Pre-Alpha 11/07/2021"
+align = 1
 
 [node name="Fade" type="ColorRect" parent="."]
 visible = false
