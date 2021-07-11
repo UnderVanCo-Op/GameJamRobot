@@ -49,32 +49,32 @@ position = Vector2( 95.3009, -143.55 )
 texture = ExtResource( 9 )
 
 [node name="cloud1" type="Sprite" parent="okrujenie"]
-position = Vector2( 118.455, -442.721 )
+position = Vector2( 97.2418, -561.515 )
 texture = ExtResource( 11 )
 offset = Vector2( 0, -74.4527 )
 
 [node name="cloud2" type="Sprite" parent="okrujenie"]
-position = Vector2( 277.259, -394.976 )
+position = Vector2( 217.862, -485.486 )
 texture = ExtResource( 8 )
 
 [node name="cloud3" type="Sprite" parent="okrujenie"]
-position = Vector2( 383.34, -523.434 )
+position = Vector2( 335.257, -630.914 )
 texture = ExtResource( 11 )
 
 [node name="cloud8" type="Sprite" parent="okrujenie"]
-position = Vector2( 1061.19, -449.703 )
+position = Vector2( 631.269, -427.076 )
 texture = ExtResource( 11 )
 
 [node name="cloud10" type="Sprite" parent="okrujenie"]
-position = Vector2( 1222.15, -439.195 )
+position = Vector2( 1035.47, -608.901 )
 texture = ExtResource( 11 )
 
 [node name="cloud11" type="Sprite" parent="okrujenie"]
-position = Vector2( 1359.29, -474.185 )
+position = Vector2( 1175.44, -574.594 )
 texture = ExtResource( 11 )
 
 [node name="cloud13" type="Sprite" parent="okrujenie"]
-position = Vector2( 1562.61, -441.188 )
+position = Vector2( 1319.37, -452.502 )
 texture = ExtResource( 11 )
 
 [node name="cloud15" type="Sprite" parent="okrujenie"]
@@ -82,23 +82,23 @@ position = Vector2( 1783.35, -430.833 )
 texture = ExtResource( 11 )
 
 [node name="cloud4" type="Sprite" parent="okrujenie"]
-position = Vector2( 572.742, -391.307 )
+position = Vector2( 45.2404, -528.486 )
 texture = ExtResource( 8 )
 
 [node name="cloud9" type="Sprite" parent="okrujenie"]
-position = Vector2( 1221.27, -561.969 )
+position = Vector2( 945.498, -470.045 )
 texture = ExtResource( 8 )
 
 [node name="cloud7" type="Sprite" parent="okrujenie"]
-position = Vector2( 853.395, -390.118 )
+position = Vector2( 460.244, -524.468 )
 texture = ExtResource( 8 )
 
 [node name="cloud5" type="Sprite" parent="okrujenie"]
-position = Vector2( 666.69, -505.471 )
+position = Vector2( 587.494, -610.123 )
 texture = ExtResource( 11 )
 
 [node name="cloud6" type="Sprite" parent="okrujenie"]
-position = Vector2( 903.342, -545.904 )
+position = Vector2( 841.117, -606.715 )
 texture = ExtResource( 11 )
 
 [node name="cloud12" type="Sprite" parent="okrujenie"]
@@ -136,7 +136,7 @@ position = Vector2( -436.456, 485.072 )
 position = Vector2( -291.279, 465.831 )
 
 [node name="Platform3" parent="." instance=ExtResource( 4 )]
-position = Vector2( -340.008, 167.427 )
+position = Vector2( -338.594, 167.427 )
 
 [node name="Platform4" parent="." instance=ExtResource( 4 )]
 position = Vector2( -211.058, 274.763 )
