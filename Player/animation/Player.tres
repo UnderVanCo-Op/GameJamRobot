@@ -1,0 +1,59 @@
+[gd_resource type="SpriteFrames" load_steps=25 format=2]
+
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft4.png" type="Texture" id=1]
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft6.png" type="Texture" id=2]
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft7.png" type="Texture" id=3]
+[ext_resource path="res://Player/HeroAnimationPNG/jumpRight2.png" type="Texture" id=4]
+[ext_resource path="res://Player/HeroAnimationPNG/jumpRight1.png" type="Texture" id=5]
+[ext_resource path="res://Player/HeroAnimationPNG/jumpLeft3.png" type="Texture" id=6]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight4.png" type="Texture" id=7]
+[ext_resource path="res://Player/HeroAnimationPNG/jumpLeft1.png" type="Texture" id=8]
+[ext_resource path="res://Player/HeroAnimationPNG/L.png" type="Texture" id=9]
+[ext_resource path="res://Player/HeroAnimationPNG/jumpLeft2.png" type="Texture" id=10]
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft8.png" type="Texture" id=11]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight5.png" type="Texture" id=12]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight2.png" type="Texture" id=13]
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft5.png" type="Texture" id=14]
+[ext_resource path="res://Player/HeroAnimationPNG/jumpRight3.png" type="Texture" id=15]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight7.png" type="Texture" id=16]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight3.png" type="Texture" id=17]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight1.png" type="Texture" id=18]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight6.png" type="Texture" id=19]
+[ext_resource path="res://Player/HeroAnimationPNG/runRight8.png" type="Texture" id=20]
+[ext_resource path="res://Player/HeroAnimationPNG/Robot.png" type="Texture" id=21]
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft1.png" type="Texture" id=22]
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft2.png" type="Texture" id=23]
+[ext_resource path="res://Player/HeroAnimationPNG/runLeft3.png" type="Texture" id=24]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 19 ), ExtResource( 16 ), ExtResource( 20 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "Right_run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 21 ) ],
+"loop": false,
+"name": "Wakeup_right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "Wakeup_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "Left_jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "Right_jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 1 ), ExtResource( 14 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Left_run",
+"speed": 5.0
+} ]
