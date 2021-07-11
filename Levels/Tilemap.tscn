@@ -6,4 +6,6 @@
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
+show_collision = true
 format = 1
+tile_data = PoolIntArray( 786433, 0, 0, 786434, 13, 0, 786435, 12, 0, 786438, 11, 0, 786439, 10, 0, 786440, 9, 0, 786441, 8, 0, 786442, 7, 0, 917510, 6, 0, 917511, 5, 0, 917512, 4, 0, 917513, 3, 0, 917514, 1, 0 )

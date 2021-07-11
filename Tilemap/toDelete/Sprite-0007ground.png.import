@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tucha.png-ac5e57ffc134ca83fd2d63f21e2da7fc.stex"
+path="res://.import/Sprite-0007ground.png-7a0912ce8f420271be1cd5f6cefe0bd1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilemap/tucha.png"
-dest_files=[ "res://.import/tucha.png-ac5e57ffc134ca83fd2d63f21e2da7fc.stex" ]
+source_file="res://Tilemap/toDelete/Sprite-0007ground.png"
+dest_files=[ "res://.import/Sprite-0007ground.png-7a0912ce8f420271be1cd5f6cefe0bd1.stex" ]
 
 [params]
 
