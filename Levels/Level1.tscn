@@ -116,7 +116,7 @@ position = Vector2( 7.91045, -44.653 )
 scale = Vector2( 3.01429, 83.0058 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -205.312, -125.238 )
+position = Vector2( 116.835, -114.013 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -156.801
