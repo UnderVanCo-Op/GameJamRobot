@@ -12,6 +12,7 @@ const Rocket = preload("res://Player/Rocket.tscn")
 var direction = 1
 var wasJump = false
 var movem_koef : float = 1
+var isArmed : bool = true
 
 func _physics_process(_delta):
 	
@@ -62,7 +63,8 @@ func _physics_process(_delta):
 			$AnimatedSprite.play("Left_jump")
 		wasJump = true
 	
-	if Input.is_action_just_pressed("Player_launch"):
+	if Input.is_action_just_pressed("Player_launch") and isArmed:
+		isArmed = false
 		var rocket = Rocket.instance()
 		if sign($RocketSpawnP.position.x) == 1:
 			rocket.set_rocket_dir(direction)
@@ -74,5 +76,8 @@ func _physics_process(_delta):
 	speed.y += gravity
 
 	speed = move_and_slide(speed, Vector2.UP)	# Плавно перемещаться
+
+func pick():
+	isArmed = true
 
 #PLAYER
