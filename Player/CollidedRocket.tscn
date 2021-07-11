@@ -7,6 +7,8 @@
 extents = Vector2( 31.625, 9.125 )
 
 [node name="CollidedRocket" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 19
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

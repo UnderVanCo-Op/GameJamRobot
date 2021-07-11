@@ -21,8 +21,8 @@ func _on_Continue_pressed():
 
 
 func _on_Restart_pressed():
-	#get_tree().paused = false	# выключаем паузу физики принудительно
-	print("restart pressed")
+	get_tree().paused = false	# выключаем паузу физики принудительно
+	Main.goto_scene("res://Levels/" + get_tree().get_current_scene().get_name() + ".tscn")
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
