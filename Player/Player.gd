@@ -15,6 +15,11 @@ func _physics_process(_delta):
 		speed.x += step
 	if Input.is_action_pressed("Player_jump") and is_on_floor():
 		speed.y -= jumpF
+	if Input.is_action_just_pressed("Player_launch"):
+		var rocket = Rocket.instance()
+		rocket.position = $RocketSpawnP.global_position
+		get_parent().add_child(rocket)
+	
 #	elif Input.is_action_pressed("Player_down"):
 #		speed.y += step
 	speed.y += gravity
