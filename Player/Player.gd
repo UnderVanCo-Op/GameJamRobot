@@ -1,11 +1,12 @@
 extends KinematicBody2D
 
-var step : int = 20		# размер шага
-var itemsCount : int = 0	# Кол-во вещей в инвентаре
+const step : int = 20		# размер шага
+#var itemsCount : int = 0	# Кол-во вещей в инвентаре
 var speed = Vector2()			# скорость (velocity)
-var inventory = {}		# Лист вещей в инвентаре
-var jumpF = 500
-var gravity = 10
+#var inventory = {}		# Лист вещей в инвентаре
+const jumpF = 500
+const gravity = 10
+const Rocket = preload("res://Player/Rocket.tscn")
 
 func _physics_process(_delta):
 	if Input.is_action_pressed("Player_goleft"):
