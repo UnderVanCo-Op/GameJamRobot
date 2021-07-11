@@ -1,12 +1,14 @@
 extends Node
 
-
 var current_scene = null
+
+func _init():
+	OS.min_window_size = OS.window_size
+	OS.max_window_size = OS.get_screen_size()
 
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
-
 
 
 func goto_scene(path):
