@@ -14,7 +14,7 @@ position = Vector2( 7.91045, -44.653 )
 scale = Vector2( 3.01429, 83.0058 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 21.1741, 140.928 )
+position = Vector2( 551.787, 285.385 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -156.801
@@ -29,6 +29,9 @@ __meta__ = {
 
 [node name="Platform" parent="." instance=ExtResource( 4 )]
 position = Vector2( -248.561, 152.094 )
+
+[node name="Platform5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 528.427, 954.309 )
 
 [node name="Platform2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 631.647, 9.5499 )
