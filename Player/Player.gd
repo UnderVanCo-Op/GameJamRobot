@@ -13,11 +13,12 @@ var direction = 1
 var wasJump = false
 var movem_koef : float = 1
 var isArmed : bool = true
+var Health : int = 100
 
 func _physics_process(_delta):
 	
-	if position.y < -500:
-		pass
+	if position.y > 500:
+		queue_free()
 		#DEATH SCREEN
 	
 	if is_on_floor() and wasJump:
