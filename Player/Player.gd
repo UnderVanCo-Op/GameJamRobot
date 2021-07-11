@@ -2,13 +2,14 @@ extends KinematicBody2D
 
 const step : int = 20		# размер шага
 #var itemsCount : int = 0	# Кол-во вещей в инвентаре
-var speed = Vector2()			# скорость (velocity)
+var speed = Vector2()		# скорость (velocity)
 #var inventory = {}		# Лист вещей в инвентаре
 const jumpF = 500
 const gravity = 10
 const Rocket = preload("res://Player/Rocket.tscn")
 var direction = 1
 var isInJump = false
+const movem_koef : float = 1.5
 
 func _physics_process(_delta):
 	if is_on_floor() and isInJump:
@@ -16,7 +17,7 @@ func _physics_process(_delta):
 			$AnimatedSprite.play("Wakeup_right")
 		else:
 			$AnimatedSprite.play("Wakeup_left")
-		isInJump=false
+		isInJump = false
 	if !(is_on_floor()):
 		if direction == 1:
 			$AnimatedSprite.play("Right_jump")
