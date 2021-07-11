@@ -8,22 +8,37 @@ const jumpF = 500
 const gravity = 10
 const Rocket = preload("res://Player/Rocket.tscn")
 var direction = 1
+var isInJump = false
 
 func _physics_process(_delta):
+	if is_on_floor() and isInJump:
+		if direction == 1:
+			$AnimatedSprite.play("Wakeup_right")
+		else:
+			$AnimatedSprite.play("Wakeup_left")
+		isInJump=false
+	if !(is_on_floor()):
+		if direction == 1:
+			$AnimatedSprite.play("Right_jump")
+		else:
+			$AnimatedSprite.play("Left_jump")
 	if Input.is_action_pressed("Player_goleft"):
 		speed.x -= step
 		direction = -1
+		$AnimatedSprite.play("Left_run")
 		if sign($RocketSpawnP.position.x) == -1:
 			$RocketSpawnP.position.x *= -1
 	
 	elif Input.is_action_pressed("Player_goright"):
 		speed.x += step
 		direction = 1
+		$AnimatedSprite.play("Right_run")
 		if sign($RocketSpawnP.position.x) == -1:
 			$RocketSpawnP.position.x *= -1
 	
 	if Input.is_action_pressed("Player_jump") and is_on_floor():
 		speed.y -= jumpF
+		isInJump = true
 	
 	if Input.is_action_just_pressed("Player_launch"):
 		var rocket = Rocket.instance()
