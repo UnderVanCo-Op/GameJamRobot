@@ -11,7 +11,7 @@ const gravity = 10
 const Rocket = preload("res://Player/Rocket.tscn")
 var direction = 1
 var wasJump = false
-#const movem_koef : float = 1.5
+var movem_koef : float = 1
 
 func _physics_process(_delta):
 	
@@ -26,15 +26,20 @@ func _physics_process(_delta):
 		else:
 			$AnimatedSprite.play("Wakeup_left")
 	
+	if(is_on_floor()):
+		movem_koef = 1
+	else:
+		movem_koef = 0.85
+	
 	if Input.is_action_pressed("Player_goleft"):
-		speed.x = -step
+		speed.x = -step * movem_koef
 		direction = -1
 		$AnimatedSprite.play("Left_run")
 		if sign($RocketSpawnP.position.x) == -1:
 			$RocketSpawnP.position.x *= -1
 	
 	elif Input.is_action_pressed("Player_goright"):
-		speed.x = step
+		speed.x = step * movem_koef
 		direction = 1
 		$AnimatedSprite.play("Right_run")
 		if sign($RocketSpawnP.position.x) == -1:

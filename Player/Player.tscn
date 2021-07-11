@@ -1,39 +1,11 @@
-<<<<<<< HEAD
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/animation/Player.tres" type="SpriteFrames" id=1]
-=======
-[gd_scene load_steps=29 format=2]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight7.png" type="Texture" id=1]
->>>>>>> 01c6a7e8181e52699f1cb5e9cfba64702277751f
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://Player/Camera2D.gd" type="Script" id=3]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight3.png" type="Texture" id=4]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight1.png" type="Texture" id=5]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight2.png" type="Texture" id=6]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight5.png" type="Texture" id=7]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight6.png" type="Texture" id=8]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight8.png" type="Texture" id=9]
-[ext_resource path="res://Player/HeroAnimationPNG/runRight4.png" type="Texture" id=10]
-[ext_resource path="res://Player/HeroAnimationPNG/Robot.png" type="Texture" id=11]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft1.png" type="Texture" id=12]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft2.png" type="Texture" id=13]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft3.png" type="Texture" id=14]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft4.png" type="Texture" id=15]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft5.png" type="Texture" id=16]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft6.png" type="Texture" id=17]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft8.png" type="Texture" id=18]
-[ext_resource path="res://Player/HeroAnimationPNG/runLeft7.png" type="Texture" id=19]
-[ext_resource path="res://Player/HeroAnimationPNG/jumpRight2.png" type="Texture" id=20]
-[ext_resource path="res://Player/HeroAnimationPNG/jumpRight1.png" type="Texture" id=21]
-[ext_resource path="res://Player/HeroAnimationPNG/jumpLeft2.png" type="Texture" id=22]
-[ext_resource path="res://Player/HeroAnimationPNG/jumpRight3.png" type="Texture" id=23]
-[ext_resource path="res://Player/HeroAnimationPNG/jumpLeft3.png" type="Texture" id=24]
-[ext_resource path="res://Player/HeroAnimationPNG/jumpLeft1.png" type="Texture" id=25]
-[ext_resource path="res://Player/HeroAnimationPNG/L.png" type="Texture" id=26]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 50.6362, 61.8817 )
+extents = Vector2( 42.2988, 59.4886 )
 
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
@@ -42,9 +14,10 @@ script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
-animation = "Wakeup_left"
+animation = "Wakeup_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.222748, 4.23177 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
