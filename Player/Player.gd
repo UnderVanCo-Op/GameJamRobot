@@ -58,6 +58,8 @@ func _physics_process(_delta):
 #	speed.x *= 0.9	# снижение скорости
 	#if(speed.length() > step):	# возможный фикс диагональной проблемы
 		#speed.normalized()
+	if(speed.x > 10 or speed.x <-10):
+		speed.x = 5
 	speed = move_and_slide(speed, Vector2.UP)	# Плавно перемещаться
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
